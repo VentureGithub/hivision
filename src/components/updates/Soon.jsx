@@ -186,7 +186,7 @@ export default function SupremeCourtITCRelief() {
                 <footer className="mt-12 border-t pt-6 text-sm text-gray-500">
                     <div className="flex items-center justify-between max-w-6xl mx-auto px-6">
                         <div>© Hi Vision — Legal & Business updates</div>
-                        <div>Designed by Tanu</div>
+                        <div></div>
                     </div>
                 </footer>
             </main>
