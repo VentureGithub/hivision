@@ -1,7 +1,7 @@
-import React from 'react'
-import Banner from '../components/Banner'
-import Form from '../components/contact/Form'
-import InfoCards from '../components/contact/InfoCards'
+import React from "react";
+import Banner from "../components/Banner";
+import Form from "../components/contact/Form";
+import InfoCards from "../components/contact/InfoCards";
 
 const Contact = () => {
   return (
@@ -13,10 +13,19 @@ const Contact = () => {
         breadcrumb1={{ label: "Home", path: "/" }}
         breadcrumb2={{ label: "Contact Us", path: "/contact" }}
       />
-      <Form />
-      <InfoCards/>
-    </>
-  )
-}
+      <div className="flex flex-col lg:flex-col">
+        {/* InfoCards section */}
+        <div className="order-2 lg:order-1">
+          <InfoCards />
+        </div>
+        {/* Form section */}
+        <div className="order-1 lg:order-2">
+          <Form />
+        </div>
+      </div>
 
-export default Contact
+    </>
+  );
+};
+
+export default Contact;

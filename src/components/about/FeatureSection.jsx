@@ -112,7 +112,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const sectionOneImg =
-  "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=900&q=80";
+  "https://thumbs.dreamstime.com/b/conceptual-image-online-training-skill-enhancement-hands-typing-keyboard-emphasizing-education-e-learning-404444770.jpg";
 const sectionTwoImg =
   "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80";
 

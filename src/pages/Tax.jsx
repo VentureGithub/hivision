@@ -50,6 +50,17 @@ const courseContent = [
   }
 ];
 
+// Premium Package courses data
+const premiumCourses = [
+  {
+    id: 5,
+    title: "TDS and TCS",
+    link: "/tds-and-tcs",
+    img: "/company.png",
+  },
+
+];
+
 const TaxAudit = () => (
   <div className="min-h-screen py-22 px-4 sm:px-6 lg:px-8" style={{background: "#fffefa"}}>
     <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -159,6 +170,35 @@ const TaxAudit = () => (
             </Link>
           </div>
         </div>
+          {/* Premium Package Courses Section */}
+                <div className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <h2 className="text-2xl font-semibold mb-6 text-[#334b94]">
+                    Premium Package - More Courses
+                  </h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {premiumCourses.map((course) => (
+                      <Link
+                        key={course.id}
+                        to={course.link}
+                        className="block bg-white rounded-lg shadow border border-[#ef9b15] hover:shadow-2xl transition-transform transform hover:-translate-y-1"
+                      >
+                        <div className="relative h-48 overflow-hidden rounded-t-lg">
+                          <img
+                            src={course.img}
+                            alt={course.title}
+                            className="w-full h-full object-cover"
+                            style={{ clipPath: "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
+                          />
+                        </div>
+                        <div className="p-4 text-center">
+                          <h3 className="text-lg font-bold text-[#334b94]">
+                            {course.title}
+                          </h3>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
       </div>
     </div>
   </div>

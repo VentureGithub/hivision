@@ -61,7 +61,7 @@ const EduHeader = () => {
 
           {/* Cart Icon */}
           <Link
-            to="/"
+            
             className={`relative transition duration-300 ${
               scrolled
                 ? "text-[#ef9b15] hover:text-[#ef9b15]"

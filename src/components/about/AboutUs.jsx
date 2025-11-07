@@ -5,6 +5,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
+  FaYoutube,
 } from "react-icons/fa";
 
 const ABOUT_IMAGE =
@@ -98,41 +99,49 @@ const AboutUs = () => {
             </motion.div>
 
             {/* Social Media */}
-       {/* Social Media */}
-<motion.div
-  className="flex items-center gap-6"
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 1.1 }}
->
-  <span className="text-gray-700 font-semibold">Connect With Us:</span>
-  <div className="flex gap-4">
-    <a
-      href="https://www.linkedin.com/in/hi-vision-taxation-education-08aa88387/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#1d9bf0] hover:text-white transition-all duration-300 hover:scale-110"
-    >
-      <FaLinkedin size={18} />
-    </a>
-    <a
-      href="https://www.facebook.com/profile.php?id=61581359084578"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#1d9bf0] hover:text-white transition-all duration-300 hover:scale-110"
-    >
-      <FaFacebook size={18} />
-    </a>
-    <a
-      href="https://www.instagram.com/hivisiontaxationeducation/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#ef9b15] hover:text-white transition-all duration-300 hover:scale-110"
-    >
-      <FaInstagram size={18} />
-    </a>
-  </div>
-</motion.div>
+            {/* Social Media */}
+            <motion.div
+              className="flex items-center gap-6"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.1 }}
+            >
+              <span className="text-gray-700 font-semibold">Connect With Us:</span>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/hi-vision-taxation-education-08aa88387/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#1d9bf0] hover:text-white transition-all duration-300 hover:scale-110"
+                >
+                  <FaLinkedin size={18} />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61581359084578"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#1d9bf0] hover:text-white transition-all duration-300 hover:scale-110"
+                >
+                  <FaFacebook size={18} />
+                </a>
+                <a
+                  href="https://www.instagram.com/hivisiontaxationeducation/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#ef9b15] hover:text-white transition-all duration-300 hover:scale-110"
+                >
+                  <FaInstagram size={18} />
+                </a>
+                <a
+                  href="https://www.youtube.com/@Hi-VisionTaxationEducation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#ef9b15] hover:text-white transition-all duration-300 hover:scale-110"
+                >
+                  <FaYoutube size={18} />
+                </a>
+              </div>
+            </motion.div>
 
           </motion.div>
         </div>

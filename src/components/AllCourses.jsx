@@ -7,14 +7,14 @@ const advancedCourses = [
     title: "Accounts (English & Hindi)",
     desc: "Learn the core of accounting principles and practices.",
     img: "/accounting.png",
-    link: "/accounting",
+    link: "/accounts",
   },
   {
     id: 2,
     title: "GST (Goods & Services Tax)",
     desc: "Understand GST compliance, filing, and practical applications.",
     img: "/gst.png",
-    link: "/gst",
+    link: "/advance-gst",
   },
 ];
 

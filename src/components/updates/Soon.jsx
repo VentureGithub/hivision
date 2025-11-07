@@ -11,19 +11,19 @@ export default function SupremeCourtITCRelief() {
         <div className="min-h-screen bg-white text-gray-800 antialiased mt-32">
             {/* Page container */}
             <section className="relative bg-gradient-to-r from-[#ef9b15] to-[#ffb76b] text-white py-10 md:py-6 overflow-hidden shadow-md">
-                <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 py-2">
+                <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 py-2">
                     {/* Text Section */}
                     <div className="flex-1 text-center md:text-left">
-                        <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide text-[#334b94] drop-shadow-sm">
-                            🎓 Admission Open!
+                        <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide text-[#334b94] drop-shadow-sm">
+                             Admission Open!
                         </h1>
 
-                        <p className="mt-4 text-base md:text-lg text-gray-700 leading-relaxed">
+                        <p className="mt-4 text-base md:text-2xl text-gray-700 leading-relaxed">
                             <span className="block font-semibold text-[#334b94]">
-                                🏅 First 100 Students Registration Fee Free (₹500)
+                                 First 100 Students Registration Fee Free (₹500)
                             </span>
                             <span className="block mt-1 text-[#334b94] font-medium">
-                                💰 Get 25% Discount on Premium Package
+                                 Get 25% Discount on Premium Package
                             </span>
                         </p>
 
@@ -186,7 +186,7 @@ export default function SupremeCourtITCRelief() {
                 <footer className="mt-12 border-t pt-6 text-sm text-gray-500">
                     <div className="flex items-center justify-between max-w-6xl mx-auto px-6">
                         <div>© Hi Vision — Legal & Business updates</div>
-                        <div></div>
+                        
                     </div>
                 </footer>
             </main>

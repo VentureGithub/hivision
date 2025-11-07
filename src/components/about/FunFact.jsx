@@ -8,7 +8,7 @@ const FunFact = () => (
     <div className="bg-[#334b94]/70 py-20 px-6 flex flex-col items-center justify-center text-center">
       <h2 className="text-white text-4xl md:text-5xl font-extrabold mb-4 leading-snug">
         {"Our motive is not just to make you "}
-        <span className="text-[#ef9b15]">{"financially literate"}</span>
+        <span className="text-[#ef9b15]">{"financially educate"}</span>
         {", but "}
         <span className="text-[#ef9b15]">{"financially independent."}</span>
       </h2>

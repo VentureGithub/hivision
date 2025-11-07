@@ -112,8 +112,9 @@ const Hero = () => {
             but to make you{" "}
             <span className="text-[#334b94] font-semibold">
               financially sound
+            </span><span className="text-gray-800 font-semibold">.
             </span>
-            .
+            
           </motion.p>
 
           <Link to="/">

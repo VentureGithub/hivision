@@ -15,7 +15,7 @@ const Banner = ({
     }}
   >
     {/* Overlay */}
-    <div className="absolute inset-0 bg-[#334b94]/60"></div>
+    <div className="absolute inset-0 bg-[#334b94]/80"></div>
 
     {/* Content */}
     <div className="relative z-10 max-w-5xl px-4 lg:px-8">

@@ -16,6 +16,8 @@ import Tax from "../pages/Tax";
 import About from "../pages/About";
 import Courses from "../pages/Courses";
 import Updates from "../pages/Updates";
+import Accountss from "../pages/Accountss";
+import GstAd from "../pages/GstAd";
 
 
 const AppRoutes = () => {
@@ -60,6 +62,28 @@ const AppRoutes = () => {
                 {
                     path: "",
                     element: <AccountingCourse />,
+                },
+
+            ],
+        },
+            {
+            path: "/accounts",
+            element: <Layout2 />,
+            children: [
+                {
+                    path: "",
+                    element: <Accountss />,
+                },
+
+            ],
+        },
+              {
+            path: "/advance-gst",
+            element: <Layout2 />,
+            children: [
+                {
+                    path: "",
+                    element: <GstAd />,
                 },
 
             ],
