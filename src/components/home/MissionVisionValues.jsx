@@ -59,7 +59,7 @@ const MissionVisionValuesModern = () => {
             <span className="text-[#ef9b15]">Mission, Vision, and Values</span>
           </h2>
           <p className="text-gray-600/90 text-base md:text-lg max-w-2xl mx-auto md:mx-0">
-            At Hi Vision, we strive to help students learn by doing and to achieve professional excellence and best practice, based on our mission, vision, and values.
+            At HI-VISION, we strive to help students learn by doing and to achieve professional excellence and best practice, based on our mission, vision, and values.
           </p>
 
 

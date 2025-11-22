@@ -7,8 +7,9 @@ const ContactUs = () => {
   return (
     <section className="w-full min-h-screen bg-[#fffefa] flex items-center justify-center py-12 px-4 sm:px-6 md:px-8">
       <div className="max-w-6xl w-full flex flex-col lg:flex-row bg-white rounded-3xl shadow-xl overflow-hidden">
-        {/* Map Section (Left) */}
-        <div className="lg:w-1/2 w-full flex items-center justify-center bg-[#f9f5ea] p-4 sm:p-6 md:p-8">
+        
+        {/* Map Section */}
+        <div className="lg:w-1/2 w-full flex items-center justify-center bg-[#f9f5ea] p-4 sm:px-6 md:px-8">
           <div className="w-full h-[550px] rounded-2xl overflow-hidden shadow-md border-2 border-[#ef9b15]">
             <iframe
               src={MAP_EMBED_URL}
@@ -24,36 +25,46 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* Contact Form (Right) */}
+        {/* Contact Form */}
         <div className="lg:w-1/2 w-full flex flex-col justify-center p-6 sm:p-8 md:p-12 h-[550px]">
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-[#334b94] text-center lg:text-left">
             Contact Us
           </h2>
 
           <form className="space-y-6 flex-grow flex flex-col justify-between">
+
             <input
               type="text"
               placeholder="Your Name"
               className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition"
               required
             />
+
             <input
               type="email"
               placeholder="Your Email"
               className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition"
               required
             />
+
+            {/* Phone Number */}
             <input
-              type="text"
-              placeholder="Your Subject"
+              type="number"
+              placeholder="Your Phone Number"
               className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition"
-            />
-            <textarea
-              rows={6}
-              placeholder="Your Message"
-              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition resize-none"
               required
             />
+
+            {/* Course Dropdown */}
+            <select
+              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition"
+              required
+            >
+              <option value="">Select Course</option>
+              <option value="advanced">Advanced Package</option>
+              <option value="premium">Premium Package</option>
+            </select>
+
             <button
               type="submit"
               className="w-full py-3 rounded-lg bg-[#334b94] text-white font-semibold hover:bg-[#ef9b15] hover:text-[#334b94] transition"

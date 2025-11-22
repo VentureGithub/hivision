@@ -175,7 +175,7 @@ const InfoSection = () => (
             Encouraging Students With Education Based on Skills
           </h3>
           <p className="text-gray-800 mb-3 text-[17px] leading-relaxed">
-            Hi Vision ensures that every learner gains industry exposure through
+          HI-VISION ensures that every learner gains industry exposure through
             seminars, case studies, and live sessions, addressing the growing
             demand for experts with real-world experience. Our programs prepare
             students for the practical realities of commercial accounting, tax
@@ -228,7 +228,7 @@ const InfoSection = () => (
             Our Path to Success and Development
           </h3>
           <p className="text-gray-800 mb-3 text-[17px] leading-relaxed">
-            As it stands, Hi Vision is one of the most trusted brands in the
+            As it stands, HI-VISION is one of the most trusted brands in the
             realm of financial and tax education. We take immense pride in the
             many students we have helped to embark on successful careers in
             corporate finance, tax consulting, and accounting organizations

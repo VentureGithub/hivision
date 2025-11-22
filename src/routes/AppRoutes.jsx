@@ -18,6 +18,7 @@ import Courses from "../pages/Courses";
 import Updates from "../pages/Updates";
 import Accountss from "../pages/Accountss";
 import GstAd from "../pages/GstAd";
+import RegisterPage from "../components/home/RegisterPage";
 
 
 const AppRoutes = () => {
@@ -161,6 +162,17 @@ const AppRoutes = () => {
                 {
                     path: "",
                     element: <About />,
+                },
+
+            ],
+        },
+        {
+            path: "/register",
+            element: <Layout2 />,
+            children: [
+                {
+                    path: "",
+                    element: <RegisterPage />,
                 },
 
             ],

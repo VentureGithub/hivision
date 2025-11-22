@@ -22,13 +22,16 @@ export default function SupremeCourtITCRelief() {
                             <span className="block font-semibold text-[#334b94]">
                                  First 100 Students Registration Fee Free (₹500)
                             </span>
-                            <span className="block mt-1 text-[#334b94] font-medium">
+                            <span className="block mt-1 text-[#334b94] font-medium text-xl">
                                  Get 25% Discount on Premium Package
+                            </span>
+                            <span className="block mt-1 text-[#334b94] font-medium text-xl">
+                                 Get 10% Discount on Advanced Package
                             </span>
                         </p>
 
                         <div className="mt-6">
-                            <Link to='/contact'>
+                            <Link to='/courses'>
                             <button className="px-6 py-3 bg-[#fff] text-[#334b94] font-bold rounded-full shadow hover:bg-[#e38910] hover:text-white transition-all duration-300">
                                 Enroll Now
                             </button>
@@ -77,7 +80,7 @@ export default function SupremeCourtITCRelief() {
                             <a href="#implications" className="inline-block border border-gray-200 px-5 py-2 rounded-md">GST implications</a>
                         </div>
 
-                        <div className="mt-6 text-sm text-gray-600">Sized to your Hi Vision theme. You can drop this page into your React routes and tailor colors using a theme variable.</div>
+                        <div className="mt-6 text-sm text-gray-600">Sized to your HI-VISION theme. You can drop this page into your React routes and tailor colors using a theme variable.</div>
                     </div>
 
                     <div className="bg-gradient-to-br from-[#fff7ed] to-white border rounded-2xl p-6 shadow-sm">
@@ -185,7 +188,7 @@ export default function SupremeCourtITCRelief() {
 
                 <footer className="mt-12 border-t pt-6 text-sm text-gray-500">
                     <div className="flex items-center justify-between max-w-6xl mx-auto px-6">
-                        <div>© Hi Vision — Legal & Business updates</div>
+                        <div>© HI-VISION — Legal & Business updates</div>
                         
                     </div>
                 </footer>

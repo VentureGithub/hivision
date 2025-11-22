@@ -13,7 +13,7 @@ const About = () => {
       <Banner
         backgroundImage="/3webbanner.png"
         title="About Us"
-        description="Discover how Hi-Vision fosters innovation, practical skills, and a brighter future through expert-led training, inclusive growth, and a commitment to educational excellence."
+        description="Discover how HI-VISION fosters innovation, practical skills, and a brighter future through expert-led training, inclusive growth, and a commitment to educational excellence."
         breadcrumb1={{ label: "Home", path: "/" }}
         breadcrumb2={{ label: "About Us", path: "/about" }}
       />

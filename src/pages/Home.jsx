@@ -9,10 +9,12 @@ import MissionVisionValues from '../components/home/MissionVisionValues'
 import CourseFeatures from '../components/home/CourseFeatures'
 import HiVisionDifference from '../components/home/HiVisionDifference'
 import FounderTestimonial from '../components/home/FounderTestimonial'
+import AdmissionPopup from '../components/AdmissionPopup'
 
 const Home = () => {
   return (
     <>
+    <AdmissionPopup/>
     <HeroSection/>
     <About/>
     <MissionVisionValues/>
@@ -20,10 +22,8 @@ const Home = () => {
     <Achievement/>
     <FounderTestimonial/>
     <RegisterPage/>
-    {/* <TeacherSection/> */}
     <CourseFeatures/>
     <HiVisionDifference/>
-  
     </>
   )
 }

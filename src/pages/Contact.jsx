@@ -9,7 +9,7 @@ const Contact = () => {
       <Banner
         backgroundImage="/3webbanner.png"
         title="Contact Us"
-        description="Get in touch with Hi-Vision for any queries, collaborations, or support. We’re here to help you with course details, admissions, and all your learning needs."
+        description="Get in touch with HI-VISION for any queries, collaborations, or support. We’re here to help you with course details, admissions, and all your learning needs."
         breadcrumb1={{ label: "Home", path: "/" }}
         breadcrumb2={{ label: "Contact Us", path: "/contact" }}
       />

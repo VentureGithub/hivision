@@ -48,10 +48,10 @@ const AllCourses = () => {
       e.preventDefault();
       let newX = x.get() - e.deltaY - e.deltaX;
 
-      if (newX <= -singleSetWidth * (repetitionCount -1)) {
+      if (newX <= -singleSetWidth * (repetitionCount - 1)) {
         newX += singleSetWidth * (repetitionCount - 2);
       } else if (newX >= 0) {
-        newX -= singleSetWidth * (repetitionCount -2);
+        newX -= singleSetWidth * (repetitionCount - 2);
       }
       x.set(newX);
     };
@@ -81,7 +81,7 @@ const AllCourses = () => {
             <span className="text-[#ef9b15]">Accounting & Taxation Courses</span>
           </h2>
           <p className="text-gray-600 text-base md:text-md max-w-2xl mx-auto">
-            We provide expert, career-focused training in accounting and taxation, preparing students with practical skills. 
+            We provide expert, career-focused training in accounting and taxation, preparing students with practical skills.
             Key subjects include GST, corporate tax, income tax, accounting, TDS, and TCS.
           </p>
         </div>
@@ -96,50 +96,50 @@ const AllCourses = () => {
           onMouseEnter={() => setIsDragging(true)}
           onMouseLeave={() => setIsDragging(false)}
         >
-<motion.div
-  className="flex gap-6 p-3 sm:gap-8 sm:p-4 cursor-grab active:cursor-grabbing"
-  style={{ x, willChange: 'transform', width: singleSetWidth * repetitionCount }}
-  drag="x"
-  dragConstraints={{ left: -Infinity, right: Infinity }}
-  dragElastic={0}
-  dragMomentum={false}
-  onDragStart={() => setIsDragging(true)}
-  onDragEnd={handleDragEnd}
->
-  {repeatedCourses.map((course, idx) => (
-    <div
-      key={`${course.id}-${idx}`}
-      className="bg-white rounded-lg shadow group hover:shadow-2xl border border-[#ef9b15] flex flex-col overflow-hidden transition-all hover:-translate-y-1 flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px]"
-    >
-      {/* Image */}
-      <div className="relative w-full h-[160px] sm:h-[180px] md:h-[200px] overflow-hidden">
-        <img
-          src={course.img}
-          alt={course.title}
-          className="w-full h-full object-cover"
-          style={{ clipPath: "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
-        />
-      </div>
+          <motion.div
+            className="flex gap-6 p-3 sm:gap-8 sm:p-4 cursor-grab active:cursor-grabbing"
+            style={{ x, willChange: 'transform', width: singleSetWidth * repetitionCount }}
+            drag="x"
+            dragConstraints={{ left: -Infinity, right: Infinity }}
+            dragElastic={0}
+            dragMomentum={false}
+            onDragStart={() => setIsDragging(true)}
+            onDragEnd={handleDragEnd}
+          >
+            {repeatedCourses.map((course, idx) => (
+              <div
+                key={`${course.id}-${idx}`}
+                className="bg-white rounded-lg shadow group hover:shadow-2xl border border-[#ef9b15] flex flex-col overflow-hidden transition-all hover:-translate-y-1 flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px]"
+              >
+                {/* Image */}
+                <div className="relative w-full h-[160px] sm:h-[180px] md:h-[200px] overflow-hidden">
+                  <img
+                    src={course.img}
+                    alt={course.title}
+                    className="w-full h-full object-cover"
+                    style={{ clipPath: "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
+                  />
+                </div>
 
-      {/* Card Content */}
-      <div className="flex flex-col flex-1 px-3 sm:px-4 py-3 items-center text-center">
-        <h3 className="text-lg sm:text-xl font-bold mb-1 text-[#334b94]">
-          {course.title}
-        </h3>
-        <p className="text-gray-800 text-xs sm:text-sm mb-3">
-          {course.desc}
-        </p>
+                {/* Card Content */}
+                <div className="flex flex-col flex-1 px-3 sm:px-4 py-3 items-center text-center">
+                  <h3 className="text-lg sm:text-xl font-bold mb-1 text-[#334b94]">
+                    {course.title}
+                  </h3>
+                  <p className="text-gray-800 text-xs sm:text-sm mb-3">
+                    {course.desc}
+                  </p>
 
-        <Link
-          to={course.link}
-          className="mt-auto px-4 sm:px-5 py-2 rounded-full font-bold text-sm sm:text-base bg-[#ef9b15] text-[#334b94] shadow hover:shadow-lg hover:bg-[#e38910] hover:text-white transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-1"
-        >
-          Read More
-        </Link>
-      </div>
-    </div>
-  ))}
-</motion.div>
+                  <Link
+                    to={course.link}
+                    className="mt-auto px-4 sm:px-5 py-2 rounded-full font-bold text-sm sm:text-base bg-[#ef9b15] text-[#334b94] shadow hover:shadow-lg hover:bg-[#e38910] hover:text-white transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-1"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </motion.div>
 
         </div>
       </div>

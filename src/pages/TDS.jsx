@@ -231,7 +231,7 @@ const TdsTcsCourse = () => (
           </div>
         </div>
           {/* Premium Package Courses Section */}
-                <div className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* <div className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                   <h2 className="text-2xl font-semibold mb-6 text-[#334b94]">
                     Premium Package - More Courses
                   </h2>
@@ -258,7 +258,7 @@ const TdsTcsCourse = () => (
                       </Link>
                     ))}
                   </div>
-                </div>
+                </div> */}
       </div>
     </div>
   </div>

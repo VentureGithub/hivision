@@ -38,7 +38,7 @@ const EduHeader = () => {
         >
           <img
             src="/logoo.png"
-            alt="EduVerse Logo"
+            alt="Hi Vision Logo"
             className="h-16 w-auto xl:h-20 object-contain"
           />
         </Link>

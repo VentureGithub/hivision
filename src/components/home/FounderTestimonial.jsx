@@ -67,7 +67,7 @@ const FounderSection = () => {
             {/* Description */}
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
               It is with great pleasure and immense pride that I extend a warm welcome to you on behalf of our educational institute .
-At Hi Vision our vision and mission is to made each and every individual skill ready as well as job ready for taxation and finance world .
+At HI-VISION our vision and mission is to made each and every individual skill ready as well as job ready for taxation and finance world .
             </p>
 
 
@@ -77,10 +77,10 @@ At Hi Vision our vision and mission is to made each and every individual skill r
             {/* Founder Details */}
             <div className="pt-6 border-t border-gray-200">
               <h4 className="font-bold text-xl text-[#334b94] mb-1">
-                Sunil Agarwal
+              Sunil Jaiswal
               </h4>
               <p className="text-gray-600 text-sm">
-                Founder & Director - Hi Vision Institute
+                Founder & Director - HI-VISION Institute
               </p>
             </div>
           </motion.div>

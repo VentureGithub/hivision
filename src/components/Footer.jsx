@@ -47,7 +47,7 @@ const Footer = () => (
             className="w-36 h-auto mb-6 bg-white p-4"
           />
           <p className="text-white/85 text-[15px] mb-6 leading-relaxed">
-            Hi Vision is one such accounting & taxation education company in Lucknow that can turn the tables around for your career with deep, practical courses and training.
+          HI-VISION is one such accounting & taxation education company in Lucknow that can turn the tables around for your career with deep, practical courses and training.
           </p>
           <div className="flex gap-3 text-white text-xl mt-3">
             <a  href="https://www.facebook.com/profile.php?id=61581359084578" target="_blank" rel="noopener noreferrer">
@@ -134,7 +134,7 @@ const Footer = () => (
       {/* Bottom Bar */}
       <div className="py-4 flex flex-col md:flex-row justify-between items-center text-white text-[15px]">
         <div className="mb-2 md:mb-0 text-center md:text-left">
-          © Hi Vision. All Rights Reserved. &nbsp;
+          © HI-VISION. All Rights Reserved. &nbsp;
           <a
             href="https://www.brandstailer.in/"
             target="_blank"

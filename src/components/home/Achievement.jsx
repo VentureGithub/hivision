@@ -11,27 +11,27 @@ const stats = [
 
 const testimonials = [
   {
-    text: "Hi Vision transformed my career completely. I joined with basic commerce knowledge and left with expertise in GST.",
+    text: "HI-VISION transformed my career completely. I joined with basic commerce knowledge and left with expertise in GST.",
     name: "Deepti Gupta",
     role: "Student, GST Expert",
   },
   {
-    text: "While preparing for CA, I joined Hi Vision for practical GST training. The faculty's experience and real case studies gave me an edge.",
+    text: "While preparing for CA, I joined HI-VISION for practical GST training. The faculty's experience and real case studies gave me an edge.",
     name: "Neha Saxena",
     role: "CA Student",
   },
   {
-    text: "As a business owner, I needed to understand taxation for my company. Hi Vision's courses on TDS, TCS, and GST compliance gave me the confidence to manage my accounts independently.",
+    text: "As a business owner, I needed to understand taxation for my company. HI-VISION's courses on TDS, TCS, and GST compliance gave me the confidence to manage my accounts independently.",
     name: "Riya Nigam",
     role: "Business Owner",
   },
   {
-    text: "Hands-on training at Hi Vision. Landed my dream job with a great salary!",
+    text: "Hands-on training at HI-VISION. Landed my dream job with a great salary!",
     name: "Raunak",
     role: "Finance Executive",
   },
   {
-    text: "I'm grateful to Hi Vision for giving me a real career, not just a certificate. Highly recommend!",
+    text: "I'm grateful to HI-VISION for giving me a real career, not just a certificate. Highly recommend!",
     name: "Chandan Jaiswal",
     role: "Accountant",
   },

@@ -68,7 +68,7 @@ const WhatMakesDifferent = () => {
         >
           <h2 className="text-4xl md:text-4xl font-extrabold mb-5 text-[#334b94] flex flex-wrap justify-center md:justify-start items-center gap-3">
             <span>What Makes </span>
-            <span className="text-[#ef9b15]">Hi Vision Different?</span>
+            <span className="text-[#ef9b15]">HI-VISION Different?</span>
           </h2>
           <p className="text-gray-700 text-base md:text-lg max-w-3xl mx-auto md:mx-0 text-center md:text-left leading-relaxed">
             Empowering students with industry-relevant skills, expert guidance,

@@ -83,7 +83,7 @@ const Hero = () => {
           >
             <span className="h-8 sm:h-10 w-1 rounded-md bg-[#334b94] block"></span>
             <span className="uppercase text-[#334b94] font-semibold tracking-widest text-xs sm:text-sm xl:text-base">
-              Hi Vision Institute
+              HI-VISION Institute
             </span>
           </motion.div>
 
@@ -117,7 +117,7 @@ const Hero = () => {
             
           </motion.p>
 
-          <Link to="/">
+          <Link to="/courses">
             <motion.button
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}

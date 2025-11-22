@@ -203,36 +203,36 @@ const courseContent = [
 
 // Premium Package courses data
 const premiumCourses = [
-  {
-    id: 1,
-    title: "Accounts",
-    link: "/accounting",
-    img: "/accounting.png",
-  },
-  {
-    id: 2,
-    title: "GST (Goods & Services Tax)",
-    link: "/gst",
-    img: "/gst.png",
-  },
+  // {
+  //   id: 1,
+  //   title: "Accounts",
+  //   link: "/accounting",
+  //   img: "/accounting.png",
+  // },
+  // {
+  //   id: 2,
+  //   title: "GST (Goods & Services Tax)",
+  //   link: "/gst",
+  //   img: "/gst.png",
+  // },
   {
     id: 3,
     title: "Company Law",
     link: "/company-law",
     img: "/company.png",
   },
-  {
-    id: 4,
-    title: "Tax Audit",
-    link: "/tax-audit",
-    img: "/tax.png",
-  },
-  {
-    id: 5,
-    title: "TDS and TCS",
-    link: "/tds-and-tcs",
-    img: "/company.png",
-  },
+  // {
+  //   id: 4,
+  //   title: "Tax Audit",
+  //   link: "/tax-audit",
+  //   img: "/tax.png",
+  // },
+  // {
+  //   id: 5,
+  //   title: "TDS and TCS",
+  //   link: "/tds-and-tcs",
+  //   img: "/company.png",
+  // },
 ];
 
 const IncomeTax = () => (
@@ -345,7 +345,7 @@ const IncomeTax = () => (
           </div>
         </div>
           {/* Premium Package Courses Section */}
-                {/* <div className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                   <h2 className="text-2xl font-semibold mb-6 text-[#334b94]">
                     Premium Package - More Courses
                   </h2>
@@ -372,7 +372,7 @@ const IncomeTax = () => (
                       </Link>
                     ))}
                   </div>
-                </div> */}
+                </div>
       </div>
     </div>
   </div>

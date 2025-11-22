@@ -53,7 +53,7 @@ const WhyJoin = () => (
           Why Join Us in Learning?
         </h2>
         <p className="text-gray-800 text-lg max-w-3xl mx-auto leading-relaxed">
-          At <span className="font-semibold text-[#ef9b15]">Hi Vision</span>, we
+          At <span className="font-semibold text-[#ef9b15]">HI-VISION</span>, we
           believe in learning that inspires real growth. Our programs are
           designed to blend theory with real-world application, ensuring every
           learner is ready to excel.

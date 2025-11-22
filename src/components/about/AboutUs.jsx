@@ -26,7 +26,7 @@ const AboutUs = () => {
             <div className="flex flex-1 h-full relative min-h-[370px]">
               <motion.img
                 src={ABOUT_IMAGE}
-                alt="Hi Vision Team"
+                alt="HI-VISION Team"
                 className="w-full h-full max-h-[580px] object-cover rounded-xl shadow-xl bg-[#e6e6e6]"
                 style={{ minHeight: "350px" }}
                 initial={{ scale: 0.9, opacity: 0 }}
@@ -63,12 +63,12 @@ const AboutUs = () => {
               <p>
                 Established in{" "}
                 <span className="font-semibold text-gray-800">August 2025</span>,
-                Hi Vision is a private limited company located in Lucknow, Uttar
+                HI-VISION is a private limited company located in Lucknow, Uttar
                 Pradesh. Our mission is to deliver finance and taxation
                 knowledge, empowering individuals with real-world expertise.
               </p>
               <p>
-                Since its founding, Hi Vision has focused on bridging the gap
+                Since its founding, HI-VISION has focused on bridging the gap
                 between theory and practice. Our courses equip students with
                 technical skills and critical thinking needed for success in
                 today’s finance and taxation industries.

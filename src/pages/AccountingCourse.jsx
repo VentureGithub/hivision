@@ -92,30 +92,7 @@ const premiumCourses = [
     link: "/gst",
     img: "/gst.png",
   },
-  // {
-  //   id: 3,
-  //   title: "Company Law",
-  //   link: "/company-law",
-  //   img: "/company.png",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Tax Audit",
-  //   link: "/tax-audit",
-  //   img: "/tax.png",
-  // },
-  // {
-  //   id: 5,
-  //   title: "TDS and TCS",
-  //   link: "/tds-and-tcs",
-  //   img: "/company.png",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Income Tax",
-  //   link: "/income-tax",
-  //   img: "/income.png",
-  // },
+
 ];
 
 const Accounting = () => (

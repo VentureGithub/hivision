@@ -123,7 +123,7 @@ const CourseFeaturesScroll = () => {
           Course <span className="text-[#ef9b15]">Features</span>
         </h2>
         <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-          At Hi Vision, we highlight the key features that make our courses effective and practical.
+          At HI-VISION, we highlight the key features that make our courses effective and practical.
         </p>
       </div>
 

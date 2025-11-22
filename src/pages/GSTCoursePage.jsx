@@ -241,12 +241,12 @@ const premiumCourses = [
   //   link: "/accounting",
   //   img: "/accounting.png",
   // },
-  {
-    id: 3,
-    title: "Company Law",
-    link: "/company-law",
-    img: "/company.png",
-  },
+  // {
+  //   id: 3,
+  //   title: "Company Law",
+  //   link: "/company-law",
+  //   img: "/company.png",
+  // },
   // {
   //   id: 4,
   //   title: "Tax Audit",
@@ -259,12 +259,12 @@ const premiumCourses = [
   //   link: "/tds-and-tcs",
   //   img: "/company.png",
   // },
-  // {
-  //   id: 6,
-  //   title: "Income Tax",
-  //   link: "/income-tax",
-  //   img: "/income.png",
-  // },
+  {
+    id: 6,
+    title: "Income Tax",
+    link: "/income-tax",
+    img: "/income.png",
+  },
 ];
 
 const GST = () => (

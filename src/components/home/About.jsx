@@ -61,7 +61,7 @@ const AboutSection = () => {
           </h2>
 
           <p className="text-gray-600 text-lg mb-2 leading-relaxed">
-            At Hi Vision, we are committed to equipping you with real-world and value-adding accounting and taxation skills. Moreover, our comprehensive training programs can assist you in entering industries such as banking, textiles, and other industry types.
+            At HI-VISION, we are committed to equipping you with real-world and value-Adding Accounting and Taxation skills. Moreover, our comprehensive training programs can assist you in entering industries such as banking, textiles, and other industry types.
 
           </p>
 
