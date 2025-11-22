@@ -732,7 +732,7 @@ const premiumPackageDetails = [
   { label: "Tenure", value: "Course + Training (9+2 Months)" },
   {
     label: "Syllabus",
-    value: "Accounting, GST, Company Law, Tax Audit, TDS and TCS, Income Tax",
+    value: "Accounting, GST, Income Tax, Company Law, Tax Audit, TDS and TCS",
   },
   { label: "Training Criteria", value: "Per Month Test, 65%+ Average Required" },
   { label: "Exam for Placement", value: "After Training, 80%+ Required" },
@@ -773,20 +773,20 @@ const AllCourses = () => {
   });
 
   // Calculating GST and discounts dynamically
-const baseAmount = activeTab === "advanced" ? 25000 : 50000;
+  const baseAmount = activeTab === "advanced" ? 25000 : 50000;
 
-// Discounts
-const discount = activeTab === "advanced"
-  ? baseAmount * 0.10   // 10% for Advanced
-  : baseAmount * 0.25;  // 25% for Premium
+  // Discounts
+  const discount = activeTab === "advanced"
+    ? baseAmount * 0.10   // 10% for Advanced
+    : baseAmount * 0.25;  // 25% for Premium
 
-const discountedAmount = baseAmount - discount;
+  const discountedAmount = baseAmount - discount;
 
-// GST (18%)
-const gst = discountedAmount * 0.18;
+  // GST (18%)
+  const gst = discountedAmount * 0.18;
 
-// Final Invoice Amount
-const totalAmount = discountedAmount + gst;
+  // Final Invoice Amount
+  const totalAmount = discountedAmount + gst;
 
 
   const courses = activeTab === "advanced" ? advancedCourses : premiumCourses;
@@ -845,9 +845,9 @@ const totalAmount = discountedAmount + gst;
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || 
-        !formData.fatherName || !formData.motherName || !formData.courseName || 
-        !formData.qualification || !formData.state || !formData.city || !formData.pincode) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone ||
+      !formData.fatherName || !formData.motherName || !formData.courseName ||
+      !formData.qualification || !formData.state || !formData.city || !formData.pincode) {
       alert("Please fill all the required fields");
       return;
     }
@@ -967,6 +967,10 @@ const totalAmount = discountedAmount + gst;
           </div>
 
           {/* Enroll Button */}
+
+          <p className="text-center text-md font-medium text-[#334b94] ">
+            Join before registrations close
+          </p>
           <button
             onClick={handleOpenModal}
             className="px-8 py-3 rounded-full font-bold text-lg bg-[#334b94] text-white shadow-lg hover:shadow-xl hover:bg-[#2a3d7a] transition-all duration-300 transform hover:scale-105"
@@ -1078,44 +1082,44 @@ const totalAmount = discountedAmount + gst;
                 </div>
                 {/* Payment Summary */}
                 <div className="bg-[#fdf0d9] border-2 border-[#ef9b15] rounded-2xl p-5 mt-6">
-  <h3 className="text-lg font-bold text-[#334b94] mb-3 text-center">
-    Payment Summary
-  </h3>
+                  <h3 className="text-lg font-bold text-[#334b94] mb-3 text-center">
+                    Payment Summary
+                  </h3>
 
-  <div className="space-y-2 text-sm text-[#334b94]">
-    <p>Taxable Value: 
-      <span className="font-semibold text-[#ef9b15]">
-        ₹{baseAmount.toLocaleString("en-IN")}
-      </span>
-    </p>
+                  <div className="space-y-2 text-sm text-[#334b94]">
+                    <p>Taxable Value:
+                      <span className="font-semibold text-[#ef9b15]">
+                        ₹{baseAmount.toLocaleString("en-IN")}
+                      </span>
+                    </p>
 
-    <p>
-      {activeTab === "advanced" ? "10% Discount:" : "25% Discount:"}
-      <span className="font-semibold text-green-600">
-        {" "} - ₹{discount.toLocaleString("en-IN")}
-      </span>
-    </p>
+                    <p>
+                      {activeTab === "advanced" ? "10% Discount:" : "25% Discount:"}
+                      <span className="font-semibold text-green-600">
+                        {" "} - ₹{discount.toLocaleString("en-IN")}
+                      </span>
+                    </p>
 
-    <p>After Discount:
-      <span className="font-semibold text-[#ef9b15]">
-        {" "}₹{discountedAmount.toLocaleString("en-IN")}
-      </span>
-    </p>
+                    <p>After Discount:
+                      <span className="font-semibold text-[#ef9b15]">
+                        {" "}₹{discountedAmount.toLocaleString("en-IN")}
+                      </span>
+                    </p>
 
-    <p>+ 18% GST:
-      <span className="font-semibold text-[#ef9b15]">
-        {" "}₹{gst.toLocaleString("en-IN")}
-      </span>
-    </p>
+                    <p>+ 18% GST:
+                      <span className="font-semibold text-[#ef9b15]">
+                        {" "}₹{gst.toLocaleString("en-IN")}
+                      </span>
+                    </p>
 
-    <p className="text-lg font-bold text-[#334b94] border-t pt-2 mt-2 flex justify-between">
-      <span>Invoice Value:</span>
-      <span className="text-[#ef9b15]">
-        ₹{totalAmount.toLocaleString("en-IN")}
-      </span>
-    </p>
-  </div>
-</div>
+                    <p className="text-lg font-bold text-[#334b94] border-t pt-2 mt-2 flex justify-between">
+                      <span>Invoice Value:</span>
+                      <span className="text-[#ef9b15]">
+                        ₹{totalAmount.toLocaleString("en-IN")}
+                      </span>
+                    </p>
+                  </div>
+                </div>
 
 
 

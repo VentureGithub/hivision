@@ -37,7 +37,7 @@ const Footer = () => (
       </svg>
     </div>
 
-    <div className="relative max-w-7xl mx-auto px-4 lg:px-8 z-10">
+    <div className="relative max-w-7xl mx-auto  z-10">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-12 border-b border-[#ffffff33]">
         {/* Logo and About */}
         <div className="flex flex-col items-start md:col-span-1">
@@ -47,10 +47,10 @@ const Footer = () => (
             className="w-36 h-auto mb-6 bg-white p-4"
           />
           <p className="text-white/85 text-[15px] mb-6 leading-relaxed">
-          HI-VISION is one such accounting & taxation education company in Lucknow that can turn the tables around for your career with deep, practical courses and training.
+            HI-VISION is one such accounting & taxation education company in Lucknow that can turn the tables around for your career with deep, practical courses and training.
           </p>
           <div className="flex gap-3 text-white text-xl mt-3">
-            <a  href="https://www.facebook.com/profile.php?id=61581359084578" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61581359084578" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="hover:text-[#ef9b15]" />
             </a>
             <a href="https://www.youtube.com/@Hi-VisionTaxationEducation" target="_blank" rel="noopener noreferrer">
@@ -66,12 +66,20 @@ const Footer = () => (
         </div>
 
         {/* Contacts */}
+        {/* Contacts */}
         <div>
           <h3 className="font-bold text-lg mb-4">Contacts</h3>
+
+          <p className="mb-2 flex items-center text-md">
+            <FaMapMarkerAlt className="mr-2 text-[#ef9b15] " />
+            Branch Off. : Arsh Plaza, Opp. Exon School, Campbell Road, Rajajipuram, Lucknow – 226017
+          </p>
+
           <p className="mb-2 flex items-center">
             <FaMapMarkerAlt className="mr-2 text-[#ef9b15]" />
-            In front of Exon Montessori Inter College, Campbell Road, Lucknow – 226003
+            Head Off. : 215/30, Subhash Marg Near Hawai Zahaj Kothi, Chowk, Lucknow – 226003
           </p>
+
           <p className="mb-2 flex items-center">
             <FaEnvelope className="mr-2 text-[#ef9b15]" />
             <a
@@ -82,23 +90,24 @@ const Footer = () => (
               hivisiontaxationeducation@gmail.com
             </a>
           </p>
+
           <p className="mb-2 flex items-center">
             <FaPhone className="mr-2 text-[#ef9b15]" />
             +91 92781 62882, +91 88875 92594
           </p>
-        
         </div>
+
 
         {/* Services/Courses */}
         <div>
           <h3 className="font-bold text-lg mb-4">Courses</h3>
           <ul className="space-y-2">
             {[
-              { name: "Tax Audit", to: "/tax-audit" },
-              { name: "GST (Goods & Services Tax)", to: "/gst" },
-              { name: "Company Law", to: "/company-law" },
-              { name: "Income Tax", to: "/income-tax" },
               { name: "Accounting", to: "/accounting" },
+              { name: "GST (Goods & Services Tax)", to: "/gst" },
+              { name: "Income Tax", to: "/income-tax" },
+              { name: "Company Law", to: "/company-law" },
+              { name: "Tax Audit", to: "/tax-audit" },
               { name: "TDS and TCS", to: "/tds-and-tcs" },
             ].map((course) => (
               <li key={course.name}>

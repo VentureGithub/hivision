@@ -15,10 +15,14 @@ const cards = [
     icon: <FaMapMarkerAlt className="text-4xl text-[#ef9b15] mb-2" />,
     label: "Address",
     value: (
-      <span>
-        In front of Exon Montessori Inter College,
+      <span className="text-center">
+        <strong className="text-[#334b94]">Branch Off.:</strong> Arsh Plaza, Opp. Exon School,
         <br />
-        Campbell Road, Lucknow – 226003
+        Campbell Road, Rajajipuram, Lucknow – 226017
+        <br />
+        <strong className="text-[#334b94] ">Head Off.:</strong> 215/30, Subhash Marg Near Hawai Zahaj Kothi,
+        <br />
+        Chowk, Lucknow – 226003
       </span>
     ),
   },
