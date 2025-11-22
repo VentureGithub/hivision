@@ -55,7 +55,7 @@ const AboutSection = () => {
         >
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 leading-tight text-[#334b94] relative">
             <span className="pr-2">
-              About <span className="text-[#ef9b15] relative z-10">Hi‑Vision</span>
+              About <span className="text-[#ef9b15] relative z-10">HI-VISION</span>
             </span>
             <span className="block w-16 h-1 bg-[#ef9b15] absolute bottom-[-8px] left-0 rounded-full opacity-60"></span>
           </h2>

@@ -6,6 +6,7 @@ import FunFact from '../components/about/FunFact'
 import FeatureSection from '../components/about/FeatureSection'
 import AboutUs from '../components/about/AboutUs'
 import WhyJoin from '../components/about/WhyJoin'
+import OfficeGallery from '../components/about/OfficeGallery'
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
       />
       <AboutUs />
       <FeatureSection />
+      <OfficeGallery/>
       <WhyJoin />
       {/* <TeacherSection /> */}
       <FunFact />

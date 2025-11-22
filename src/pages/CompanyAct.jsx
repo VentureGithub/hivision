@@ -32,36 +32,12 @@ const highlights = [
 
 // Premium Package courses data
 const premiumCourses = [
-  // {
-  //   id: 1,
-  //   title: "Accounts",
-  //   link: "/accounting",
-  //   img: "/accounting.png",
-  // },
-  // {
-  //   id: 2,
-  //   title: "GST (Goods & Services Tax)",
-  //   link: "/gst",
-  //   img: "/gst.png",
-  // },
   {
     id: 4,
     title: "Tax Audit",
     link: "/tax-audit",
     img: "/tax.png",
   },
-  // {
-  //   id: 5,
-  //   title: "TDS and TCS",
-  //   link: "/tds-and-tcs",
-  //   img: "/company.png",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Income Tax",
-  //   link: "/income-tax",
-  //   img: "/income.png",
-  // },
 ];
 
 
@@ -145,6 +121,71 @@ const CompanyAct = () => (
             ))}
           </div>
         </div>
+        {/* Additional Detailed Info Section */}
+        <div className="mt-12 text-gray-800 mx-auto space-y-8 text-lg leading-relaxed">
+          <section>
+            <h3 className="text-xl font-semibold mb-4 text-[#334b94]">Types of Companies</h3>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>Private Company – Minimum 2 members, restricted share transfer.</li>
+              <li>Public Company – Minimum 7 members, can list shares publicly.</li>
+              <li>One Person Company (OPC) – Single shareholder structure.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 text-[#334b94]">Key Roles and Responsibilities</h3>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>Directors – Fiduciary duties, board governance, compliance.</li>
+              <li>Company Secretary – Ensures legal and procedural compliance.</li>
+              <li>Shareholders – Ownership and voting rights.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 text-[#334b94]">Important Sections to Highlight</h3>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>Section 3 – Definition and types of companies.</li>
+              <li>Section 7 – Incorporation process.</li>
+              <li>Section 149–172 – Board of Directors: appointment, duties, meetings.</li>
+              <li>Section 185–186 – Loans and investments.</li>
+              <li>Section 248 – Strike off and winding up.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 text-[#334b94]">Compliance Essentials</h3>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>Filing of Annual Returns (MGT-7) and Financial Statements (AOC-4).</li>
+              <li>Holding AGMs, maintaining statutory registers.</li>
+              <li>Adherence to Secretarial Standards (SS-1, SS-2).</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 text-[#334b94]">MCA Portal – Practical Knowledge</h3>
+            <h4 className="font-semibold mb-2">What is MCA Portal?</h4>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>Official platform of the Ministry of Corporate Affairs.</li>
+              <li>Facilitates e-Governance for company registration, filings, and compliance.</li>
+            </ul>
+
+            <h4 className="font-semibold mt-6 mb-2">Core Functionalities</h4>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>Company Incorporation – SPICe+ form (Part A & B).</li>
+              <li>DIN & DSC Management – Director Identification Number, Digital Signature.</li>
+              <li>E-Filing – Uploading forms like DIR-12, INC-22, MGT-7, AOC-4.</li>
+              <li>Public Document Access – View company master data, charges, filings.</li>
+              <li>Grievance Redressal – Helpdesk and ticket system.</li>
+            </ul>
+
+            <h4 className="font-semibold mt-6 mb-2">MCA V3.0 Highlights</h4>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>Enhanced user interface and compliance management system.</li>
+              <li>E-adjudication, e-consultation, and advanced helpdesk features.</li>
+              <li>Integration with PAN, Aadhaar, and GST for seamless filings.</li>
+            </ul>
+          </section>
+        </div>
 
 
 
@@ -179,35 +220,35 @@ const CompanyAct = () => (
             </Link>
           </div>
         </div>
-          {/* Premium Package Courses Section */}
-                <div className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                  <h2 className="text-2xl font-semibold mb-6 text-[#334b94]">
-                    Premium Package - More Courses
-                  </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {premiumCourses.map((course) => (
-                      <Link
-                        key={course.id}
-                        to={course.link}
-                        className="block bg-white rounded-lg shadow border border-[#ef9b15] hover:shadow-2xl transition-transform transform hover:-translate-y-1"
-                      >
-                        <div className="relative h-48 overflow-hidden rounded-t-lg">
-                          <img
-                            src={course.img}
-                            alt={course.title}
-                            className="w-full h-full object-cover"
-                            style={{ clipPath: "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
-                          />
-                        </div>
-                        <div className="p-4 text-center">
-                          <h3 className="text-lg font-bold text-[#334b94]">
-                            {course.title}
-                          </h3>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
+        {/* Premium Package Courses Section */}
+        <div className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-semibold mb-6 text-[#334b94]">
+            Premium Package - More Courses
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {premiumCourses.map((course) => (
+              <Link
+                key={course.id}
+                to={course.link}
+                className="block bg-white rounded-lg shadow border border-[#ef9b15] hover:shadow-2xl transition-transform transform hover:-translate-y-1"
+              >
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img
+                    src={course.img}
+                    alt={course.title}
+                    className="w-full h-full object-cover"
+                    style={{ clipPath: "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
+                  />
                 </div>
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-bold text-[#334b94]">
+                    {course.title}
+                  </h3>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   </div>
