@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ComplianceDeadlines from './ComplianceDeadlines';
 
 // SupremeCourt-ITC-Relief-Page.jsx
 // Single-file React component styled with Tailwind CSS.
@@ -15,26 +16,26 @@ export default function SupremeCourtITCRelief() {
                     {/* Text Section */}
                     <div className="flex-1 text-center md:text-left">
                         <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide text-[#334b94] drop-shadow-sm">
-                             Admission Open!
+                            Admission Open!
                         </h1>
 
                         <p className="mt-4 text-base md:text-2xl text-gray-700 leading-relaxed">
                             <span className="block font-semibold text-[#334b94]">
-                                 First 100 Students Registration Fee Free (₹500)
+                                First 100 Students Registration Fee Free (₹500)
                             </span>
                             <span className="block mt-1 text-[#334b94] font-medium text-xl">
-                                 Get 25% Discount on Premium Package
+                                Get 25% Discount on Premium Package
                             </span>
                             <span className="block mt-1 text-[#334b94] font-medium text-xl">
-                                 Get 10% Discount on Advanced Package
+                                Get 10% Discount on Advanced Package
                             </span>
                         </p>
 
                         <div className="mt-6">
                             <Link to='/courses'>
-                            <button className="px-6 py-3 bg-[#fff] text-[#334b94] font-bold rounded-full shadow hover:bg-[#e38910] hover:text-white transition-all duration-300">
-                                Enroll Now
-                            </button>
+                                <button className="px-6 py-3 bg-[#fff] text-[#334b94] font-bold rounded-full shadow hover:bg-[#e38910] hover:text-white transition-all duration-300">
+                                    Enroll Now
+                                </button>
                             </Link>
                         </div>
                     </div>
@@ -67,6 +68,7 @@ export default function SupremeCourtITCRelief() {
 `}</style>
 
             </section>
+            <ComplianceDeadlines/>
 
             <main className="max-w-6xl mx-auto px-6 py-12">
                 {/* Hero */}
@@ -171,7 +173,7 @@ export default function SupremeCourtITCRelief() {
                         <p className="mt-3 text-sm text-gray-600">If you want, our team can review your vendor documents and suggest a checklist tailored to your business.</p>
                         <div className="mt-4 flex gap-3">
                             <Link to="/contact" className="inline-block px-4 py-2 bg-[#ef9b15] text-white rounded-md">Request review</Link>
-                   
+
                         </div>
                     </div>
 
@@ -189,7 +191,7 @@ export default function SupremeCourtITCRelief() {
                 <footer className="mt-12 border-t pt-6 text-sm text-gray-500">
                     <div className="flex items-center justify-between max-w-6xl mx-auto px-6">
                         <div>© HI-VISION — Legal & Business updates</div>
-                        
+
                     </div>
                 </footer>
             </main>
