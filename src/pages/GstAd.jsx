@@ -268,6 +268,12 @@ const premiumCourses = [
     link: "/gst",
     img: "/gst.png",
   },
+    {
+    id: 6,
+    title: "Income Tax",
+    link: "/income-tax",
+    img: "/income.png",
+  },
   {
     id: 3,
     title: "Company Law",
@@ -286,12 +292,12 @@ const premiumCourses = [
     link: "/tds-and-tcs",
     img: "/company.png",
   },
-  {
-    id: 6,
-    title: "Income Tax",
-    link: "/income-tax",
-    img: "/income.png",
-  },
+  // {
+  //   id: 6,
+  //   title: "Income Tax",
+  //   link: "/income-tax",
+  //   img: "/income.png",
+  // },
 ];
 
 const GstAd = () => (
@@ -476,27 +482,7 @@ const GstAd = () => (
     ))}
   </div>
 </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {premiumCourses.map((course) => (
-              <Link
-                key={course.id}
-                to={course.link}
-                className="block bg-white rounded-xl shadow-xl hover:shadow-2xl border-2 border-[#ef9b15] transform hover:scale-105 transition-all duration-300"
-              >
-                <div className="relative h-52 overflow-hidden rounded-t-xl">
-                  <img
-                    src={course.img}
-                    alt={course.title}
-                    className="w-full h-full object-cover"
-                    style={{ clipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)" }}
-                  />
-                </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-[#334b94]">{course.title}</h3>
-                </div>
-              </Link>
-            ))}
-          </div>
+          
         </div>
 
       </div>

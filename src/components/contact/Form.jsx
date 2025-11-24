@@ -12,7 +12,6 @@ export default function ContactUs() {
     const formData = new FormData(event.target);
     formData.append("access_key", "71bd17f0-bf4b-4008-8657-691f9a0275eb");
 
-    // Admin ko ye msg dikhe ki inquiry Contact Us se aayi hai
     formData.append("source", "Contact Us page se inquiry aayi hai");
 
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -51,58 +50,100 @@ export default function ContactUs() {
         </div>
 
         {/* Contact Form */}
-        <div className="lg:w-1/2 w-full flex flex-col justify-center p-6 sm:p-8 md:p-12 h-[550px]">
+        <div className="lg:w-1/2 w-full flex flex-col justify-center p-6 sm:p-8 md:p-12 h-[550px] overflow-y-auto">
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-[#334b94] text-center lg:text-left">
             Contact Us
           </h2>
 
-          <form onSubmit={onSubmit} className="space-y-6 flex-grow flex flex-col justify-between">
+          <form onSubmit={onSubmit} className="space-y-4">
 
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition"
-            />
+  {/* Name + Father Name (2 Columns Grid) */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+      className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+      focus:outline-none focus:border-[#334b94] transition"
+    />
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition"
-            />
+    <input
+      type="text"
+      name="father_name"
+      placeholder="Father Name"
+      required
+      className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+      focus:outline-none focus:border-[#334b94] transition"
+    />
+  </div>
 
-            <input
-              type="number"
-              name="phone"
-              placeholder="Your Phone Number"
-              required
-              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition"
-            />
+  {/* Mobile */}
+  <input
+    type="number"
+    name="phone"
+    placeholder="Mobile Number"
+    required
+    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+    focus:outline-none focus:border-[#334b94] transition"
+  />
 
-            <select
-              name="course"
-              required
-              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 focus:outline-none focus:border-[#334b94] text-gray-900 transition"
-            >
-              <option value="">Select Course</option>
-              <option value="Advanced Package">Advanced Package</option>
-              <option value="Premium Package">Premium Package</option>
-            </select>
+  {/* Email */}
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    required
+    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+    focus:outline-none focus:border-[#334b94] transition"
+  />
 
-            <button
-              type="submit"
-              className="w-full py-3 rounded-lg bg-[#334b94] text-white font-semibold hover:bg-[#ef9b15] hover:text-[#334b94] transition"
-            >
-              Send Message
-            </button>
+  {/* DOB */}
+  <input
+    type="date"
+    name="dob"
+    required
+    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+    focus:outline-none focus:border-[#334b94] transition"
+  />
 
-            <p className="text-center text-sm font-semibold mt-2 text-[#334b94]">
-              {result}
-            </p>
-          </form>
+  {/* Qualification */}
+  <input
+    type="text"
+    name="qualification"
+    placeholder="Qualification"
+    required
+    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+    focus:outline-none focus:border-[#334b94] transition"
+  />
+
+  {/* Course Selector */}
+  <select
+    name="course"
+    required
+    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+    focus:outline-none focus:border-[#334b94] transition"
+  >
+    <option value="">Select Course</option>
+    <option value="Advanced Package">Advanced Package</option>
+    <option value="Premium Package">Premium Package</option>
+  </select>
+
+  {/* Submit */}
+  <button
+    type="submit"
+    className="w-full py-3 rounded-lg bg-[#334b94] text-white font-semibold 
+    hover:bg-[#ef9b15] hover:text-[#334b94] transition"
+  >
+    Send Message
+  </button>
+
+  <p className="text-center text-sm font-semibold text-[#334b94]">
+    {result}
+  </p>
+
+</form>
+
         </div>
       </div>
     </section>

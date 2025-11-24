@@ -3,11 +3,11 @@ import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const courses = [
-  { id: 1, title: "Tax Audit", desc: "Learn the process of auditing taxes in compliance with regulations.", img: "/tax.png", link: "/tax-audit" },
-  { id: 2, title: "GST (Goods & Services Tax)", desc: "Understand GST compliance, filing, and practical applications.", img: "/gst.png", link: "/gst" },
-  { id: 3, title: "Company Law", desc: "Master company taxation procedures and corporate compliance.", img: "/company.png", link: "/company-law" },
-  { id: 4, title: "Income Tax", desc: "Learn personal and corporate income tax calculation and filing.", img: "/income.png", link: "/income-tax" },
   { id: 5, title: "Accounting", desc: "Get practical knowledge of bookkeeping, ledgers, and financial statements.", img: "/accounting.png", link: "/accounting" },
+  { id: 2, title: "GST (Goods & Services Tax)", desc: "Understand GST compliance, filing, and practical applications.", img: "/gst.png", link: "/gst" },
+  { id: 4, title: "Income Tax", desc: "Learn personal and corporate income tax calculation and filing.", img: "/income.png", link: "/income-tax" },
+  { id: 3, title: "Company Law", desc: "Master company taxation procedures and corporate compliance.", img: "/company.png", link: "/company-law" },
+  { id: 1, title: "Tax Audit", desc: "Learn the process of auditing taxes in compliance with regulations.", img: "/tax.png", link: "/tax-audit" },
   { id: 6, title: "TDS and TCS", desc: "Understand Tax Deducted at Source and Tax Collected at Source procedures.", img: "/Gemini_Generated_Image_yhczoeyhczoeyhcz.png", link: "/tds-and-tcs" },
 ];
 
@@ -82,8 +82,9 @@ const AllCourses = () => {
           </h2>
           <p className="text-gray-600 text-base md:text-md max-w-2xl mx-auto">
             We provide expert, career-focused training in accounting and taxation, preparing students with practical skills.
-            Key subjects include GST, corporate tax, income tax, accounting, TDS, and TCS.
+            Key subjects include Accounting, GST, Income Tax, Company Law, Tax Audit, TDS and TCS.
           </p>
+
         </div>
 
         {/* Infinite Scroll Carousel */}
