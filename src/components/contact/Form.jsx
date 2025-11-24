@@ -50,99 +50,116 @@ export default function ContactUs() {
         </div>
 
         {/* Contact Form */}
-        <div className="lg:w-1/2 w-full flex flex-col justify-center p-6 sm:p-8 md:p-12 h-[550px] overflow-y-auto">
+        <div className="lg:w-1/2 w-full flex flex-col justify-center p-4 sm:p-4 md:p-6 h-auto overflow-y-auto">
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-[#334b94] text-center lg:text-left">
             Contact Us
           </h2>
 
           <form onSubmit={onSubmit} className="space-y-4">
 
-  {/* Name + Father Name (2 Columns Grid) */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <input
-      type="text"
-      name="name"
-      placeholder="Your Name"
-      required
-      className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+            {/* Name + Father Name (2 Columns Grid) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
       focus:outline-none focus:border-[#334b94] transition"
-    />
+              />
 
-    <input
-      type="text"
-      name="father_name"
-      placeholder="Father Name"
-      required
-      className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+              <input
+                type="text"
+                name="father_name"
+                placeholder="Father Name"
+                required
+                className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
       focus:outline-none focus:border-[#334b94] transition"
-    />
-  </div>
+              />
+            </div>
 
-  {/* Mobile */}
-  <input
-    type="number"
-    name="phone"
-    placeholder="Mobile Number"
-    required
-    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+            {/* Mobile */}
+            <input
+              type="number"
+              name="phone"
+              placeholder="Mobile Number"
+              required
+              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
     focus:outline-none focus:border-[#334b94] transition"
-  />
+            />
 
-  {/* Email */}
-  <input
-    type="email"
-    name="email"
-    placeholder="Email"
-    required
-    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+            {/* Email */}
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
     focus:outline-none focus:border-[#334b94] transition"
-  />
+            />
 
-  {/* DOB */}
+            {/* DOB */}
+            {/* <input
+              type="date"
+              name="dob"
+              required
+              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+    focus:outline-none focus:border-[#334b94] transition"
+            /> */}
+<div className="relative w-full">
   <input
     type="date"
     name="dob"
     required
-    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
-    focus:outline-none focus:border-[#334b94] transition"
+    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 pl-16 pr-5
+      focus:outline-none focus:border-[#334b94] transition"
+    placeholder="DOB"
   />
-
-  {/* Qualification */}
-  <input
-    type="text"
-    name="qualification"
-    placeholder="Qualification"
-    required
-    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
-    focus:outline-none focus:border-[#334b94] transition"
-  />
-
-  {/* Course Selector */}
-  <select
-    name="course"
-    required
-    className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
-    focus:outline-none focus:border-[#334b94] transition"
+  <span
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none select-none"
   >
-    <option value="">Select Course</option>
-    <option value="Advanced Package">Advanced Package</option>
-    <option value="Premium Package">Premium Package</option>
-  </select>
+    DOB
+  </span>
+</div>
 
-  {/* Submit */}
-  <button
-    type="submit"
-    className="w-full py-3 rounded-lg bg-[#334b94] text-white font-semibold 
+
+
+            {/* Qualification */}
+            <input
+              type="text"
+              name="qualification"
+              placeholder="Qualification"
+              required
+              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+    focus:outline-none focus:border-[#334b94] transition"
+            />
+
+            {/* Course Selector */}
+            <select
+              name="course"
+              required
+              className="w-full bg-[#fffefa] border border-[#ef9b15] rounded-lg py-3 px-5 
+    focus:outline-none focus:border-[#334b94] transition"
+            >
+              <option value="">Select Course</option>
+              <option value="Advanced Package">Advanced Package</option>
+              <option value="Premium Package">Premium Package</option>
+            </select>
+
+            {/* Submit */}
+            <button
+              type="submit"
+              className="w-full py-3 rounded-lg bg-[#334b94] text-white font-semibold 
     hover:bg-[#ef9b15] hover:text-[#334b94] transition"
-  >
-    Send Message
-  </button>
+            >
+              Send Message
+            </button>
 
-  <p className="text-center text-sm font-semibold text-[#334b94]">
-    {result}
-  </p>
+            <p className="text-center text-sm font-semibold text-[#334b94]">
+              {result}
+            </p>
 
-</form>
+          </form>
 
         </div>
       </div>
