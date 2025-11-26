@@ -968,7 +968,6 @@ const AllCourses = () => {
     phone: "",
     fatherName: "",
     motherName: "",
-    courseName: "",
     qualification: "",
     state: "",
     city: "",
@@ -1027,7 +1026,6 @@ const AllCourses = () => {
       phone: "",
       fatherName: "",
       motherName: "",
-      courseName: "",
       qualification: "",
       state: "",
       city: "",
@@ -1068,7 +1066,6 @@ const AllCourses = () => {
       !formData.phone ||
       !formData.fatherName ||
       !formData.motherName ||
-      !formData.courseName ||
       !formData.qualification ||
       !formData.state ||
       !formData.city ||
@@ -1114,7 +1111,6 @@ const AllCourses = () => {
         last_name: formData.lastName,
         father_name: formData.fatherName,
         mother_name: formData.motherName,
-        course_name: formData.courseName,
         qualification: formData.qualification,
         state: formData.state,
         city: formData.city,
@@ -1503,25 +1499,7 @@ const AllCourses = () => {
                     </div>
                   </div>
 
-                  {/* Course Name */}
-                  <div className="relative">
-                    <label
-                      htmlFor="courseName"
-                      className="block text-sm font-medium text-gray-700 mb-2"
-                    >
-                      Course Name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="courseName"
-                      name="courseName"
-                      value={formData.courseName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#334b94] focus:ring-2 focus:ring-[#ef9b15] focus:ring-opacity-30 transition-all outline-none"
-                      placeholder="Enter course name"
-                    />
-                  </div>
+               
 
                   {/* Qualification */}
                   <div className="relative">
