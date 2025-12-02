@@ -1659,14 +1659,6 @@ const AllCourses = () => {
                   </div>
                 </div>
 
-                {/* Confirmation Message */}
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
-                  <p className="text-xs text-blue-800 text-center flex items-center justify-center gap-1">
-                    <IoCheckmarkCircle className="text-blue-600" size={16} />
-                    Confirmation email has been sent
-                  </p>
-                </div>
-
                 {/* Close Button */}
                 <button
                   onClick={handleCloseSuccessAlert}

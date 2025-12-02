@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ComplianceDeadlines from './ComplianceDeadlines';
+import NewRentAgreementAct from './NewRentAgreementAct';
+import MCASmallCompanyAuditExemption from './MCASmallCompanyAuditExemption';
+import RBIQuickChequeClearing from './RBIQuickChequeClearing';
 
-// SupremeCourt-ITC-Relief-Page.jsx
-// Single-file React component styled with Tailwind CSS.
-// Default export a ready-to-use page component for your Hi Vision theme.
-// Usage: save as src/pages/SupremeCourtITCRelief.jsx and import into your router.
 
 export default function SupremeCourtITCRelief() {
     return (
@@ -69,7 +68,9 @@ export default function SupremeCourtITCRelief() {
 
             </section>
             <ComplianceDeadlines/>
-
+            <NewRentAgreementAct/>
+<MCASmallCompanyAuditExemption/>
+<RBIQuickChequeClearing/>
             <main className="max-w-6xl mx-auto px-6 py-12">
                 {/* Hero */}
                 <section className="grid md:grid-cols-2 gap-8 items-center">
